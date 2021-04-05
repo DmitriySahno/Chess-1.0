@@ -20,7 +20,7 @@ public class Queen extends ChessPiece {
         int y = toLine-line;
 
         //check possibilities to move or attack
-        if ((Math.abs(y)==Math.abs(x)&&x!=0)||(x==0||y==0)) return true;
+        if ((Math.abs(y)==Math.abs(x)&&x!=0)||(x==0&&y!=0||x!=0&&y==0)) return true;
 
         //default
         return false;
